@@ -1,0 +1,160 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  background-color: #adacb2;
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  -webkit-box-shadow: 0 5px 35px 25px #919097;
+          box-shadow: 0 5px 35px 25px #919097;
+}
+.wrapper input {
+  display: none;
+}
+.wrapper .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  bottom: 10%;
+  left: 35%;
+  width: 30%;
+  z-index: 1;
+}
+.wrapper .navigation .nav_btn {
+  width: calc(5px + 1.171875vw);
+  height: calc(5px + 1.171875vw);
+  border: 1px solid white;
+  border-radius: 50%;
+  margin: calc(5px + 0.78125vw);
+  cursor: pointer;
+}
+.wrapper .navigation .nav_btn:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+.wrapper #one:checked ~ .container_sliders {
+  -webkit-transform: translate(0);
+          transform: translate(0);
+}
+.wrapper #two:checked ~ .container_sliders {
+  -webkit-transform: translate(-25%);
+          transform: translate(-25%);
+}
+.wrapper #three:checked ~ .container_sliders {
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+.wrapper #four:checked ~ .container_sliders {
+  -webkit-transform: translate(-75%);
+          transform: translate(-75%);
+}
+.wrapper #one:checked ~ .navigation label:first-child,
+.wrapper #two:checked ~ .navigation label:nth-child(2),
+.wrapper #three:checked ~ .navigation label:nth-child(3),
+.wrapper #four:checked ~ .navigation label:nth-child(4) {
+  background-color: white;
+}
+.wrapper #one:checked ~ .container_sliders .item_first .next,
+.wrapper #two:checked ~ .container_sliders .item_second .previous,
+.wrapper #two:checked ~ .container_sliders .item_second .next,
+.wrapper #three:checked ~ .container_sliders .item_third .previous,
+.wrapper #three:checked ~ .container_sliders .item_third .next,
+.wrapper #four:checked ~ .container_sliders .item_fourth .previous {
+  display: block;
+}
+.wrapper .container_sliders {
+  width: 400%;
+  word-spacing: -0.3em;
+  margin-bottom: -2%;
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
+}
+.wrapper .container_sliders .slider {
+  display: inline-block;
+  position: relative;
+  width: 25%;
+}
+.wrapper .container_sliders .slider img {
+  width: 100%;
+}
+.wrapper .container_sliders .slider .next, .wrapper .container_sliders .slider .previous {
+  display: none;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  font-size: calc(20px + 3.125vw);
+  color: white;
+  cursor: pointer;
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
+  will-change: transform;
+}
+.wrapper .container_sliders .slider .next {
+  right: 10%;
+}
+.wrapper .container_sliders .slider .next:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+.wrapper .container_sliders .slider .previous {
+  left: 10%;
+}
+.wrapper .container_sliders .slider .previous:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+.wrapper .container_sliders h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  width: 50%;
+  font-family: "Bebas Neue";
+  font-size: calc(16px + 4.375vw);
+  color: #e0e0e0;
+  text-shadow: 2px 3px black;
+  letter-spacing: 0.1em;
+}
+.wrapper .container_sliders p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  width: 80%;
+  padding: 10px 0;
+  font-family: "Bebas Neue";
+  font-size: calc(8px + 2.8125vw);
+  color: #e0e0e0;
+  text-shadow: 2px 3px black;
+  letter-spacing: 0.06em;
+  word-spacing: 0.3em;
+}

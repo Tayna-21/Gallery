@@ -1,0 +1,47 @@
+<!DOCTYPE HTML5>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="carousel" content="how to create carousel">
+    <title>Carousel</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrapper">
+      <input type="radio" name="nav" id="one" checked>
+      <input type="radio" name="nav" id="two">
+      <input type="radio" name="nav" id="three">
+      <input type="radio" name="nav" id="four">
+      <div class="navigation">
+        <label for="one" class="nav_btn"></label>
+        <label for="two" class="nav_btn"></label>
+        <label for="three" class="nav_btn"></label>
+        <label for="four" class="nav_btn"></label>
+      </div>
+      <div class="container_sliders">
+        <div class="slider item_first">
+          <h1>Let's go!</h1>
+          <p>tickets for any type of transport</p>
+          <img src="./img/airplane.jpg">
+          <label for="two" class="next">&#10095;</label>
+        </div>
+        <div class="slider item_second">
+          <label for="one" class="previous">&#10094;</label>
+          <img src="./img/train.jpg">
+          <label for="three" class="next">&#10095;</label>
+        </div>
+        <div class="slider item_third">
+          <label for="two" class="previous">&#10094;</label>
+          <img src="./img/bus.jpg">
+          <label for="four" class="next">&#10095;</label>
+        </div>
+        <div class="slider item_fourth">
+          <label for="three" class="previous">&#10094;</label>
+          <img src="./img/ship.jpg">
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
